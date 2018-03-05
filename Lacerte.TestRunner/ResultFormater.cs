@@ -12,8 +12,8 @@ namespace Lacerte.TestRunner
         public ResultFormater()
         {
             string mydocumentspath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            ResultFile = mydocumentspath + "\\result1.xml";
-            ResultLog = mydocumentspath + "\\result1.log";
+            ResultFile = mydocumentspath + "\\Result.xml";
+            ResultLog = mydocumentspath + "\\Result.log";
         }
         public void CreateXMLResult(XmlNode result)
         {
