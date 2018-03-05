@@ -11,8 +11,9 @@ namespace Lacerte.TestRunner
 
         public ResultFormater()
         {
-            ResultFile = @"C:\Users\pjena\Documents\result1.xml";
-            ResultLog = @"C:\Users\pjena\Documents\result1.log";
+            string mydocumentspath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            ResultFile = mydocumentspath + "\\result1.xml";
+            ResultLog = mydocumentspath + "\\result1.log";
         }
         public void CreateXMLResult(XmlNode result)
         {
